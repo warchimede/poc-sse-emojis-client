@@ -11,6 +11,10 @@
 		5CD5EFB12609338E0086E5FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD5EFB02609338E0086E5FA /* ContentView.swift */; };
 		5CD5EFB3260933920086E5FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD5EFB2260933920086E5FA /* Assets.xcassets */; };
 		5CD5EFB6260933920086E5FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD5EFB5260933920086E5FA /* Preview Assets.xcassets */; };
+		5CD5EFBF260934800086E5FA /* EmojisStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD5EFBE260934800086E5FA /* EmojisStream.swift */; };
+		5CD5EFC3260937FA0086E5FA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD5EFC2260937FA0086E5FA /* Event.swift */; };
+		5CD5EFC7260938BB0086E5FA /* EventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD5EFC6260938BB0086E5FA /* EventSource.swift */; };
+		5CD5EFCA26093AC40086E5FA /* EventStreamParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD5EFC926093AC40086E5FA /* EventStreamParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		5CD5EFB2260933920086E5FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CD5EFB5260933920086E5FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5CD5EFB7260933920086E5FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD5EFBE260934800086E5FA /* EmojisStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisStream.swift; sourceTree = "<group>"; };
+		5CD5EFC2260937FA0086E5FA /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5CD5EFC6260938BB0086E5FA /* EventSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSource.swift; sourceTree = "<group>"; };
+		5CD5EFC926093AC40086E5FA /* EventStreamParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStreamParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,8 @@
 		5CD5EFAD2609338E0086E5FA /* poc-sse-emojis-client */ = {
 			isa = PBXGroup;
 			children = (
+				5CD5EFC1260936F70086E5FA /* EventSource */,
+				5CD5EFBE260934800086E5FA /* EmojisStream.swift */,
 				5CD5EFAE2609338E0086E5FA /* poc_sse_emojis_clientApp.swift */,
 				5CD5EFB02609338E0086E5FA /* ContentView.swift */,
 				5CD5EFB2260933920086E5FA /* Assets.xcassets */,
@@ -67,6 +77,16 @@
 				5CD5EFB5260933920086E5FA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CD5EFC1260936F70086E5FA /* EventSource */ = {
+			isa = PBXGroup;
+			children = (
+				5CD5EFC2260937FA0086E5FA /* Event.swift */,
+				5CD5EFC6260938BB0086E5FA /* EventSource.swift */,
+				5CD5EFC926093AC40086E5FA /* EventStreamParser.swift */,
+			);
+			path = EventSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD5EFC7260938BB0086E5FA /* EventSource.swift in Sources */,
+				5CD5EFC3260937FA0086E5FA /* Event.swift in Sources */,
 				5CD5EFB12609338E0086E5FA /* ContentView.swift in Sources */,
+				5CD5EFCA26093AC40086E5FA /* EventStreamParser.swift in Sources */,
 				5CD5EFAF2609338E0086E5FA /* poc_sse_emojis_clientApp.swift in Sources */,
+				5CD5EFBF260934800086E5FA /* EmojisStream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
